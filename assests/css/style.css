@@ -5,7 +5,7 @@
 }
 
 html {
-    background-image: radial-gradient(#1974D2 5%, #001540);
+    background-image: radial-gradient(#DF4B4B 5%, #8A181F);
     width: 100%;
     height: 100%;
     color: white;
@@ -30,6 +30,12 @@ ul {
     padding-right: 42px;
     font-family: var(--font-grl);
     margin-right: 15px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.btn:hover {
+    opacity: 1;
 }
 
 .content__btn--1,
@@ -89,7 +95,7 @@ ul {
 
 .container__details {
     margin-top: 128px;
-    margin-left: 120px;
+    margin-left: 16px;
 }
 
 .content__title {
@@ -100,11 +106,11 @@ ul {
 /* image */
 .container__png {
     position: absolute;
-    background: url(../img/ahri.png) no-repeat ;
+    background: url(../img/leesin.png) no-repeat ;
     height: 80vh;
     width: 60vw;
-    bottom: 0;
-    right: -162px;
+    bottom: 0px;
+    right: 0px;
 }
 /* icon */
 .categories .content__icon > i {
