@@ -1,0 +1,161 @@
+:root {
+    --background-color: #00308F;
+    --fill-color:  white;
+    --font-grl: "Poppins", sans-serif;
+}
+
+html {
+    background-image: radial-gradient(#1974D2 5%, #001540);
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: var(--font-grl);
+}
+
+ul {
+    padding-left: 0;
+}
+
+.container {
+    position: relative;
+}
+/* button */
+.btn {
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-family: var(--font-grl);
+    margin-right: 15px;
+}
+
+.content__btn--1,
+.content__btn--2 {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+/* header */
+.png {
+    width: 120px;
+    height: inherit;
+    transform: translateY(-16%);
+    margin-left: 24px;
+}
+
+.categories {
+    text-align: center;
+    line-height: 50px;
+    list-style: none;
+}
+
+.container__header {
+    height: 50px;
+}
+
+.categories .categories__games {
+    margin-left: auto;
+}
+
+.categories .categories__chat {
+    margin-right: 64px;
+}
+
+.categories :is(.categories__games, .categories__review, .categories__FAQ, .categories__chat) {
+    padding-right: 30px;
+}
+
+.categories li:nth-of-type(6) {
+    top: 0;
+}
+
+/* details */
+.content__trending {
+    font-weight: 600;
+}
+
+.content__subtitle {
+    font-family: var(--font-grl);
+    font-weight: 200;
+    font-size: 21px;
+}
+
+.content__title {
+    margin: 0;
+
+}
+
+.container__details {
+    margin-top: 128px;
+    margin-left: 120px;
+}
+
+.content__title {
+    font-family: "Permanent Marker", cursive;
+    font-size: 40px;
+}
+
+/* image */
+.container__png {
+    position: absolute;
+    background: url(../img/ahri.png) no-repeat ;
+    height: 80vh;
+    width: 60vw;
+    bottom: 0;
+    right: -162px;
+}
+/* icon */
+.categories .content__icon > i {
+    display: inline-block;
+}
+
+.categories.content__icon {
+    display: flex;
+    font-size: 32px;
+    gap: 40px;
+    margin-top: auto;
+}
+/* animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(1000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.container__details {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    /* animation-fill-mode: forwards; */
+    /* transform: translateX(-150px); */
+}
+
+.container__png {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    /* animation-fill-mode: forwards; */
+    /* transform: translateX(-150px); */
+}
