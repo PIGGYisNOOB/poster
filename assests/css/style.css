@@ -69,7 +69,7 @@ ul {
     position: absolute;
     background-color: black;
     display: block;
-    transition: 0.25s linear;
+    transition: 0.2s linear;
 }
 
 .btn--4 span:nth-child(1),
@@ -90,7 +90,7 @@ ul {
     right: 0;
     width: 3px;
     height: 0;
-    transition-delay: 0.25s;
+    transition-delay: 0.2s;
 }
 
 .btn--4 span:nth-child(3),
@@ -101,7 +101,7 @@ ul {
     right: 0;
     width: 0;
     height: 3px;
-    transition-delay: 0.5s;
+    transition-delay: 0.4s;
 }
 
 .btn--4 span:nth-child(4),
@@ -112,7 +112,7 @@ ul {
     bottom: 0;
     width: 3px;
     height: 0;
-    transition-delay: 0.75s;
+    transition-delay: 0.6s;
 }
 
 .btn--4:hover span:nth-child(odd),
@@ -129,20 +129,28 @@ ul {
     height: 100%;
 }
 
-/* .btn--4:before,
+.btn--4:before,
 .btn--3:before,
 .btn--2:before,
 .btn--1:before {
     background-color: black;
     position: absolute;
     content: "";
-    bottom: 0;
+    top: 0;
     left: 0;
-    height: 4px;
-    width: 0%;
+    height: 100%;
+    width: 0;
     z-index: -1;
-    transition: width 0.25s ease-in;
-} */
+    transition: width 0.25s linear 0.8s;
+}
+
+.btn--4:hover:before,
+.btn--3:hover:before,
+.btn--2:hover:before,
+.btn--1:hover:before {
+    width: 100%;
+}
+
 
 /* .btn--4:before,
 .btn--3:before,
@@ -236,6 +244,8 @@ ul {
     right: 0px;
 }
 /* icon */
+.fa-brands
+
 .categories .content__icon > i {
     display: inline-block;
 }
@@ -245,6 +255,7 @@ ul {
     font-size: 32px;
     gap: 40px;
     margin-top: auto;
+    
 }
 /* animation */
 @keyframes slideInLeft {
